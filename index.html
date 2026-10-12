@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nisarg Basket | Natural • Pure • Healthy</title>
+  <meta name="description" content="Shop natural grains, cold-pressed oils, spices, traditional snacks and dry fruits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="top-message"><i class="bi bi-leaf-fill me-2"></i>Farm-sourced goodness <span>•</span> Free delivery over ₹999 <span>•</span> 100% natural products <span>•</span> Support local farmers</div>
+      <div class="top-links"><a href="#tracking">Order Tracking</a><a href="#help">Help</a><a href="#offers">Offers</a></div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-xl main-nav sticky-top">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand brand" href="#"><span class="brand-mark"><i class="bi bi-leaf-fill"></i></span><span class="brand-name">Nisarg <b>Basket</b><small>NATURAL • PURE • HEALTHY</small></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav mx-xl-auto my-3 my-xl-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Shop All</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categories <i class="bi bi-chevron-down small"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#story">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <form class="search-box d-flex" role="search" onsubmit="event.preventDefault(); searchProducts();">
+          <i class="bi bi-search"></i><input id="productSearch" class="form-control" type="search" placeholder="Search for natural products..." aria-label="Search products"><button aria-label="Search" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <div class="nav-actions">
+          <a href="#account"><i class="bi bi-person"></i><span>Account</span></a>
+          <a href="#cart" class="cart-link"><i class="bi bi-cart3"></i><span>Cart</span><b id="cartCount">0</b></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-leaf leaf-one"></div><div class="hero-leaf leaf-two"></div>
+      <div class="container-fluid px-lg-5">
+        <div class="row align-items-center g-0">
+          <div class="col-lg-5 hero-copy">
+            <div class="eyebrow">PURE FOODS <span>•</span> HEALTHY LIVING <span>•</span> A BETTER TOMORROW</div>
+            <h1>Goodness from Nature,<br><em>Delivered to You</em></h1>
+            <p>Explore a wide range of traditional grains, cold-pressed oils, natural spices, wholesome snacks and more — all from trusted farmers to your home.</p>
+            <div class="hero-buttons"><a href="#products" class="btn btn-nature">Shop Now <i class="bi bi-arrow-right ms-2"></i></a><a href="#categories" class="btn btn-outline-nature">Explore Categories</a></div>
+            <div class="hero-promises"><span><i class="bi bi-leaf-fill"></i> 100% Natural</span><span><i class="bi bi-flower1"></i> No Artificial Additives</span><span><i class="bi bi-heart-fill"></i> Better for a Healthier You</span></div>
+          </div>
+          <div class="col-lg-7 hero-art">
+            <img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f5?auto=format&fit=crop&w=1400&q=85" alt="Natural grains, spices and ingredients" class="hero-image">
+            <div class="hero-image-overlay"></div>
+            <div class="floating-note"><i class="bi bi-patch-check-fill"></i><span><strong>Pure & Natural</strong><small>Goodness in every bite</small></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-band" id="categories">
+      <div class="container-fluid px-lg-5">
+        <div class="category-list">
+          <a class="category-item" href="#products" data-category="Millets & Grains"><img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=300&q=80" alt=""><span>Millets &amp; Grains</span></a>
+          <a class="category-item" href="#products" data-category="Cold-Pressed Oils"><img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=300&q=80" alt=""><span>Cold-Pressed Oils</span></a>
+          <a class="category-item" href="#products" data-category="Spices & Masala"><img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=300&q=80" alt=""><span>Spices &amp; Masala</span></a>
+          <a class="category-item" href="#products" data-category="Traditional Snacks"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=300&q=80" alt=""><span>Traditional Snacks</span></a>
+          <a class="category-item" href="#products" data-category="Jaggery & Honey"><img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=300&q=80" alt=""><span>Jaggery &amp; Honey</span></a>
+          <a class="category-item" href="#products" data-category="Dry Fruits"><img src="https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&w=300&q=80" alt=""><span>Dry Fruits</span></a>
+          <a class="category-item" href="#products" data-category="Herbal & Wellness"><img src="https://images.unsplash.com/photo-1544787219-7f47ab765f1e?auto=format&fit=crop&w=300&q=80" alt=""><span>Herbal &amp; Wellness</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section section-space" id="products">
+      <div class="container-fluid px-lg-5">
+        <div class="section-heading d-flex align-items-end justify-content-between mb-4">
+          <div><span class="section-kicker">FRESH FROM OUR FARMERS</span><h2>Bestsellers from Our Farms</h2></div>
+          <a href="#products" class="view-all">View All Products <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="row g-3 product-grid" id="productGrid">
+          <div class="col-12 col-sm-6 col-xl-3 product-col" data-name="barnyard millet samak grains">
+            <article class="product-card"><div class="product-photo"><span class="product-tag">Best Seller</span><img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=85" alt="Barnyard millet"></div><div class="product-info"><h3>Barnyard Millet (Samak)</h3><p class="weight">1 kg</p><div class="rating">★★★★★ <span>4.8 (124)</span></div><div class="price-row"><strong>₹180</strong><del>₹220</del><span class="discount">18% OFF</span></div><div class="product-actions"><button class="btn btn-add" onclick="addToCart('Barnyard Millet')"><i class="bi bi-cart3"></i> Add to Cart</button><button class="btn btn-wish" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button></div></div></article>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 product-col" data-name="wood pressed sesame oil cold pressed oil">
+            <article class="product-card"><div class="product-photo"><span class="product-tag tag-green">Pure &amp; Natural</span><img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=85" alt="Cold pressed oil"></div><div class="product-info"><h3>Wood Pressed Sesame Oil</h3><p class="weight">1 Litre</p><div class="rating">★★★★★ <span>4.9 (92)</span></div><div class="price-row"><strong>₹320</strong><del>₹380</del><span class="discount">16% OFF</span></div><div class="product-actions"><button class="btn btn-add" onclick="addToCart('Sesame Oil')"><i class="bi bi-cart3"></i> Add to Cart</button><button class="btn btn-wish" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button></div></div></article>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 product-col" data-name="organic turmeric powder spices masala">
+            <article class="product-card"><div class="product-photo"><span class="product-tag tag-green">Organic</span><img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f5?auto=format&fit=crop&w=600&q=85" alt="Turmeric powder"></div><div class="product-info"><h3>Organic Turmeric Powder</h3><p class="weight">500 g</p><div class="rating">★★★★★ <span>4.7 (76)</span></div><div class="price-row"><strong>₹160</strong><del>₹200</del><span class="discount">20% OFF</span></div><div class="product-actions"><button class="btn btn-add" onclick="addToCart('Turmeric Powder')"><i class="bi bi-cart3"></i> Add to Cart</button><button class="btn btn-wish" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button></div></div></article>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 product-col" data-name="mixed dry fruits nuts">
+            <article class="product-card"><div class="product-photo"><span class="product-tag">Premium</span><img src="https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&w=600&q=85" alt="Mixed dry fruits"></div><div class="product-info"><h3>Mixed Dry Fruits</h3><p class="weight">250 g</p><div class="rating">★★★★★ <span>4.8 (110)</span></div><div class="price-row"><strong>₹350</strong><del>₹420</del><span class="discount">17% OFF</span></div><div class="product-actions"><button class="btn btn-add" onclick="addToCart('Mixed Dry Fruits')"><i class="bi bi-cart3"></i> Add to Cart</button><button class="btn btn-wish" aria-label="Add to wishlist"><i class="bi bi-heart"></i></button></div></article>
+          </div>
+        </div>
+        <p class="no-results d-none" id="noResults">No matching products found. Try another search.</p>
+      </div>
+    </section>
+
+    <section class="benefits-strip">
+      <div class="container-fluid px-lg-5"><div class="row g-3">
+        <div class="col-6 col-lg-3 benefit"><i class="bi bi-leaf-fill"></i><div><strong>Naturally Sourced</strong><span>Direct from trusted farmers</span></div></div>
+        <div class="col-6 col-lg-3 benefit"><i class="bi bi-patch-check-fill"></i><div><strong>Small-Batch Quality</strong><span>Pure, fresh and authentic</span></div></div>
+        <div class="col-6 col-lg-3 benefit"><i class="bi bi-shield-check"></i><div><strong>Secure Payments</strong><span>Safe &amp; hassle-free checkout</span></div></div>
+        <div class="col-6 col-lg-3 benefit"><i class="bi bi-truck"></i><div><strong>Pan-India Delivery</strong><span>Bringing nature to your doorstep</span></div></div>
+      </div></div>
+    </section>
+
+    <section class="story-section section-space" id="story">
+      <div class="container"><div class="row align-items-center g-5"><div class="col-lg-6"><img class="story-image" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=85" alt="Green fields and farmland"></div><div class="col-lg-6"><span class="section-kicker">OUR PROMISE TO YOU</span><h2>Good food begins with good roots.</h2><p>We bring thoughtfully sourced pantry essentials from trusted growers to your home. Simple ingredients, honest quality and a little more goodness in every day.</p><a class="btn btn-nature" href="#products">Discover Our Products <i class="bi bi-arrow-right ms-2"></i></a></div></div></div>
+    </section>
+  </main>
+
+  <footer id="contact"><div class="container-fluid px-lg-5 footer-inner"><a class="navbar-brand brand" href="#"><span class="brand-mark"><i class="bi bi-leaf-fill"></i></span><span class="brand-name">Nisarg <b>Basket</b><small>NATURAL • PURE • HEALTHY</small></span></a><p>Nature's goodness, delivered with care.</p><div class="footer-links"><a href="#contact">Contact</a><a href="#help">Help</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a></div><small>© <span id="year"></span> Nisarg Basket. Demo template — replace with your client's brand details.</small></div></footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="cartToast" class="toast align-items-center text-bg-success border-0" role="status" aria-live="polite" aria-atomic="true"><div class="d-flex"><div class="toast-body" id="toastMessage">Added to cart</div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
